@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultra Premium Age Difference Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Premium Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <main class="glass-container">
+        <header class="app-header">
+            <h1 class="gradient-text">Age Difference</h1>
+            <p class="subtitle">Calculate precise time intervals with elegance</p>
+        </header>
+
+        <section class="calculator-section">
+            <div class="input-group">
+                <label>Start Date</label>
+                <div class="dropdown-row">
+                    <select id="start-day" class="custom-select" aria-label="Start Day">
+                        <option value="" disabled selected>Day</option>
+                    </select>
+                    <select id="start-month" class="custom-select" aria-label="Start Month">
+                        <option value="" disabled selected>Month</option>
+                        <option value="0">January</option>
+                        <option value="1">February</option>
+                        <option value="2">March</option>
+                        <option value="3">April</option>
+                        <option value="4">May</option>
+                        <option value="5">June</option>
+                        <option value="6">July</option>
+                        <option value="7">August</option>
+                        <option value="8">September</option>
+                        <option value="9">October</option>
+                        <option value="10">November</option>
+                        <option value="11">December</option>
+                    </select>
+                    <select id="start-year" class="custom-select" aria-label="Start Year">
+                        <option value="" disabled selected>Year</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>End Date / Current Date</label>
+                <div class="dropdown-row">
+                    <select id="end-day" class="custom-select" aria-label="End Day">
+                        <option value="" disabled selected>Day</option>
+                    </select>
+                    <select id="end-month" class="custom-select" aria-label="End Month">
+                        <option value="" disabled selected>Month</option>
+                        <option value="0">January</option>
+                        <option value="1">February</option>
+                        <option value="2">March</option>
+                        <option value="3">April</option>
+                        <option value="4">May</option>
+                        <option value="5">June</option>
+                        <option value="6">July</option>
+                        <option value="7">August</option>
+                        <option value="8">September</option>
+                        <option value="9">October</option>
+                        <option value="10">November</option>
+                        <option value="11">December</option>
+                    </select>
+                    <select id="end-year" class="custom-select" aria-label="End Year">
+                        <option value="" disabled selected>Year</option>
+                    </select>
+                </div>
+            </div>
+
+            <button id="calculate-btn" class="neon-btn">
+                <span>CALCULATE</span>
+                <div class="btn-glow"></div>
+            </button>
+        </section>
+
+        <section id="result-section" class="result-section hidden">
+            <div class="result-card">
+                <div class="result-item">
+                    <span id="res-years" class="result-value">0</span>
+                    <span class="result-label">Years</span>
+                </div>
+                <div class="result-divider"></div>
+                <div class="result-item">
+                    <span id="res-months" class="result-value">0</span>
+                    <span class="result-label">Months</span>
+                </div>
+                <div class="result-divider"></div>
+                <div class="result-item">
+                    <span id="res-days" class="result-value">0</span>
+                    <span class="result-label">Days</span>
+                </div>
+            </div>
+            <p id="error-msg" class="error-text"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
